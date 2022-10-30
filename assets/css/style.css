@@ -169,4 +169,66 @@ legend {
   padding: 15px;
 }
 
+.intro {
+  display: flex;
+  min-height: 80vh;
+  color: #ffffff;
+}
+.intro__left, .intro__right {
+  width: 50%;
+  height: 100%;
+}
+.intro__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.intro__hello {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+}
+.intro__title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 78px;
+}
+.intro__title span {
+  color: #FBFF22;
+}
+.intro__directions {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #999999;
+  position: relative;
+  margin-bottom: 55px;
+}
+.intro__directions::after {
+  content: "";
+  width: 76px;
+  height: 1px;
+  background-color: #999999;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+.intro__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  color: #999999;
+}
+.intro__imgBox {
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid #FBFF22;
+}
+
 /*# sourceMappingURL=style.css.map */
