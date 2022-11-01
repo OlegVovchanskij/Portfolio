@@ -4,12 +4,13 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: min-content;
   width: 100%;
   background-color: #000000;
 }
 
 .container {
+  height: 100%;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
@@ -141,7 +142,7 @@ legend {
 .header__findMe__link {
   width: 50px;
   height: 50px;
-  background-color: #FBFF22;
+  background-color: #fbff22;
   border: 1px solid #0F0F0F;
   border-radius: 100px;
   display: flex;
@@ -162,7 +163,7 @@ legend {
   font-weight: 600;
 }
 .header__nav__btn {
-  color: #FBFF22;
+  color: #fbff22;
   font-size: 20px;
   border: 2px solid #FBFF22;
   border-radius: 5px;
@@ -194,7 +195,7 @@ legend {
   line-height: 78px;
 }
 .intro__title span {
-  color: #FBFF22;
+  color: #fbff22;
 }
 .intro__directions {
   font-weight: 500;
@@ -228,7 +229,92 @@ legend {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 5px solid #FBFF22;
+  border: 5px solid #fbff22;
+}
+
+.project {
+  width: 100%;
+}
+.project .section__title__menu {
+  user-select: none;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.project .section__title__menu .section__title__bg {
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 200px;
+  font-weight: 600;
+  -webkit-text-stroke: 2px rgba(153, 153, 153, 0.3);
+}
+.project .section__title__menu .section__title {
+  user-select: none;
+  position: absolute;
+  z-index: 3;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #fbff22;
+}
+.project .projects__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 60px;
+}
+.project__item {
+  width: 50%;
+  min-height: 200px;
+  background-color: #131313;
+  border-radius: 20px;
+  display: flex;
+  padding: 25px;
+}
+.project__item__icon {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/projects/car-game.png");
+  background-size: cover;
+}
+.project__item__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.project__item__content__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #fbff22;
+}
+.project__item__content__btns {
+  padding-left: 25px;
+  width: 100%;
+  display: flex;
+  column-gap: 25px;
+}
+.project__item__content__btns a {
+  text-align: center;
+  width: 50%;
+  border: 1px solid #fbff22;
+  padding: 10px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

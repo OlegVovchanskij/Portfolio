@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 // variables
-$yellow:#FBFF22;
-$black:#000000;
-$grey:#999999;
-$white:#ffffff;
-$font-base:20px;
+$yellow: #fbff22;
+$black: #000000;
+$grey: #999999;
+$white: #ffffff;
+$project-item-bg: #131313;
+$font-base: 20px;
 
-
-
-
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
-.main{
-  min-height: 100vh;
+.main {
+  min-height: min-content;
+
   width: 100%;
   background-color: $black;
 }
-.container{
+.container {
+  height: 100%;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
@@ -26,4 +26,4 @@ $font-base:20px;
 @import "reset.scss";
 @import "components/header";
 @import "components/intro";
-
+@import "components/projects";

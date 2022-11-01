@@ -1,0 +1,85 @@
+.project {
+  width: 100%;
+  .section__title__menu {
+    user-select: none;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .section__title__bg {
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+      color: $black;
+      font-size: 200px;
+      font-weight: 600;
+      -webkit-text-stroke: 2px rgba($color: $grey, $alpha: 0.3);
+    }
+    .section__title {
+      user-select: none;
+      position: absolute;
+      z-index: 3;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      color: #fbff22;
+    }
+  }
+  .projects__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 60px;
+  }
+  &__item {
+    width: 50%;
+    min-height: 200px;
+    background-color: $project-item-bg;
+    border-radius: 20px;
+    display: flex;
+    padding: 25px;
+    &__icon {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("../img/projects/car-game.png");
+      background-size: cover;
+    }
+    &__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #fbff22;
+      }
+      &__btns {
+        padding-left: 25px;
+        width: 100%;
+        display: flex;
+
+        column-gap: 25px;
+        & a {
+          text-align: center;
+          width: 50%;
+          border: 1px solid $yellow;
+          padding: 10px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
