@@ -37,22 +37,26 @@
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 60px;
+    column-gap: 25px;
   }
   &__item {
-    width: 50%;
+    width: 49%;
     min-height: 200px;
     background-color: $project-item-bg;
     border-radius: 20px;
     display: flex;
     padding: 25px;
+
     &__icon {
       width: 50%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("../img/projects/car-game.png");
-      background-size: cover;
+
+      & img {
+        width: 100%;
+      }
     }
     &__content {
       width: 50%;
@@ -70,7 +74,8 @@
         padding-left: 25px;
         width: 100%;
         display: flex;
-
+        justify-content: center;
+        align-items: center;
         column-gap: 25px;
         & a {
           text-align: center;

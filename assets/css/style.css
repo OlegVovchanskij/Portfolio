@@ -272,9 +272,10 @@ legend {
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 60px;
+  column-gap: 25px;
 }
 .project__item {
-  width: 50%;
+  width: 49%;
   min-height: 200px;
   background-color: #131313;
   border-radius: 20px;
@@ -287,8 +288,9 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/projects/car-game.png");
-  background-size: cover;
+}
+.project__item__icon img {
+  width: 100%;
 }
 .project__item__content {
   width: 50%;
@@ -307,6 +309,8 @@ legend {
   padding-left: 25px;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 25px;
 }
 .project__item__content__btns a {
